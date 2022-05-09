@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Item</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200;300&family=Inconsolata&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+        </style>
+    <link href="deleteitem.css" rel="stylesheet">
+</head>
+<body>
+    <div class="manu">
+    <h1>หน้าลบข้อมูล</h1>
+    <% if(typeof mesg != "undefined") { %>
+        <h2><%= mesg %></h2>
+    <% } %>
+    <a href="/"class="myButton">หน้าแรก</a>
+    <a href="/additem"class="myButton">additem</a>
+    <a href="/delete"class="myButton">delete</a>
+    <a href="/profile"class="myButton">profile</a>
+</div>
+    <hr>
+    <div class="menu1">
+    <table id="table">
+        <tr>
+            <th>Select</th>
+            <th>id</th>
+            <th>no.</th>
+            <th>draw</th>
+            <th>Category</th>
+            <th>date</th>
+            <th>prize</th>
+        </tr>
+        
+        <form action="/delete" method="post">
+            <% thh.forEach(function(item) { %>
+            <tr>
+                <td><input type="radio" name ="id" value = <%= item.id %></td>
+                <td><%= item.id %>.</td>
+            <td><%= item.draw %></td>
+            <td>[ <%= item.no %> ]</td>
+            <td><%= item.Category %></td>
+            <td>[ <%= item.date %> ]</td>
+            <td><%= item.prize %></td>
+            </tr>
+            <% }) %>            
+    </table>
+</div>
+    <button type="submit">Delete</button>
+        </form>
+</body>
+</html>

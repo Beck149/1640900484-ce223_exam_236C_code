@@ -1,0 +1,79 @@
+*{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Mitr', sans-serif;
+}
+body{
+    background-image: url(backgroundnew.jpg);
+    background-size: 130%;
+    background-position: center;
+}
+h1{
+    color: #000000;
+}
+h2{
+    text-align: center;
+    color: #d7d7d7;
+    font-weight: normal;
+    /*background-color: #EAFFD0;*/
+}
+h3{
+    text-align: center;
+}
+table{
+    text-align: center;
+}
+.p-Aboutme{
+    font-weight: normal; 
+    text-align: justify;
+}
+.p-Name{
+    font-weight: normal;
+}
+.p-Footer{
+    text-align: center;
+}
+.name{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    background-color: #313131;
+}
+/* (3) Id Selector */
+#th-Details{
+    text-align: left;
+}
+ 
+/* div */
+.top-container{
+    background-color: #3333339a;
+    padding: 40px;
+    border-radius:50px;
+}
+.table-content h2{
+    background-color: #333333;
+}
+.table-content img:hover{
+    background-color: #d7d7d7;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px -2px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:10px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Add Item</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200;300&family=Inconsolata&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+        </style>
+    <link href="additem.css" rel="stylesheet">
+</head>
+<body>
+    <div class="manu">
+    <h1>เพิ่มสลากกินแบ่ง</h1>
+    <% if(typeof mesg != "undefined") { %>
+    <h1><%= mesg %></h1>
+    <% } %>
+    <a href="/"class="myButton">หน้าแรก</a>
+    <a href="/additem"class="myButton">additem</a>
+    <a href="/delete"class="myButton">delete</a>
+    <a href="/profile"class="myButton">profile</a>
+    </div>
+    <hr>
+    <div class="menu1">
+    <form action="/additem" method="post">
+        <div>
+            <label class="texx">id</label>
+            <input class="ddd"  type="text" name="id" id="id"placeholder="ลำดับ"> 
+        </div>
+        <div>
+            <label class="texx">draw</label>
+            <input class="ddd"  type="text" name="draw" id="draw"placeholder="เลขหวย"> 
+        </div>
+        <div>
+            <label class="texx">no.</label>
+            <input class="ddd"  type="text" name="no" id="no"placeholder="จำนวนรางวัล"> 
+        </div>
+        <div>
+            <label class="texx">Category</label>
+            <input class="ddd"  type="text" name="Category" id="Category"placeholder="รางวัล"> 
+        </div>
+        <div>
+            <label class="texx">date</label>
+            <input class="ddd" type="text" name="date" id="date"placeholder="วันที่"> 
+        </div>
+        <div>
+            <label class="texx">prize</label>
+            <input class="ddd"  type="text" name="prize" id="prize"placeholder="จำนวนบาท"> 
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
